@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="@drawable/bg">
+<RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="280dp"
+        android:layout_height="340dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/registerpageshape">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="44dp"
+        android:text="You have successfully subscribed for: "
+        android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="@color/securityapp_black"/>
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>

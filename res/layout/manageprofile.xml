@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+<ScrollView 
+    android:fillViewport="true"
+    android:padding="10px"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+  
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/registerpageshape" >
+
+        <EditText
+            android:id="@+id/editTextFName"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:hint="First Name"/>
+
+        <EditText
+            android:id="@+id/editTextMiddleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextFName"
+            android:layout_alignRight="@+id/editTextFName"
+            android:layout_below="@+id/editTextFName"
+            android:hint="Middle Name (optional)"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextMiddleName"
+            android:layout_alignRight="@+id/editTextMiddleName"
+            android:layout_below="@+id/editTextMiddleName"
+            android:hint="Last Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spinner1"
+            android:layout_alignRight="@+id/spinner1"
+            android:layout_below="@+id/spinner1"
+            android:hint="City" />
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/editTextStreet2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@layout/button"
+            android:text="Update"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonUpdate"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Client Details"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/editTextStreet2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/editTextStreet1"
+            android:layout_alignLeft="@+id/editTextStreet1"
+            android:layout_below="@+id/editTextStreet1"
+            android:hint="Street 2 (optional)" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignRight="@+id/editTextLastName"
+            android:layout_alignLeft="@+id/editTextLastName"
+            android:layout_below="@+id/editTextLastName" />
+        <EditText
+            android:id="@+id/editTextStreet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextCity"
+            android:layout_alignRight="@+id/editTextCity"
+            android:layout_below="@+id/editTextCity"
+            android:hint="Street 1" />
+
+    </RelativeLayout>
+    
+        </ScrollView>
+
+</LinearLayout>

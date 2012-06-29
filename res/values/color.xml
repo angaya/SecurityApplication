@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="securityapp_red">#ffcc0033</color>
+	<color name="securityapp_blue">#ff0066cc</color>
+	<color name="securityapp_green">#ff33ff00</color>
+	<color name="securityapp_yellow">#ffffff00</color>
+	<color name="securityapp_orange">#ffffb400</color>
+	<color name="securityapp_black">#ff000000</color>
+	<color name="securityapp_gray">#ff333333</color>
+	<color name="securityapp_white">#ffffffff</color>
+	<color name="securityapp_white_alpha">#c0ffffff</color>
+	<color name="securityapp_qianlan">#50F2F2</color>
+    <color name="securityapp_white2">#ffc6c6c6</color>
+    <color name="securityapp_all_backcolor">#fff5f5f5</color>
+	<color name="securityapp_newlightgray">#ffb4b4b4</color>
+	<color name="securityapp_newpurple">#ff780f05</color>
+	<color name="securityapp_newdarkgray">#ff5a5a5a</color>
+	<color name="securityapp_dimgray">#ff696969</color>
+	<color name="securityapp_qianhuan">#fcfdab</color>
+	<color name="securityapp_ziluolan">#8000FF</color>
+	<color name="securityapp_sail">#87CEFA</color>
+	<color name="securityapp_alpha_00">#00000000</color>
+	<color name="securityapp_red_disabled">#F69E9E</color>
+</resources>

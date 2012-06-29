@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/registerpageshape" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="Edit Contacts"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="48dp"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editTextName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editTextEmail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="phone number"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/editTextPhone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@layout/button"
+            android:text="Edit"
+            android:textColor="@color/securityapp_white" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/buttonEdit"
+            android:layout_alignBottom="@+id/buttonEdit"
+            android:layout_toLeftOf="@+id/textView1"
+            android:background="@layout/button"
+            android:text="Delete"
+            android:textColor="@color/securityapp_white" />
+
+        <Button
+            android:id="@+id/buttonback"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/buttonEdit"
+            android:layout_alignBottom="@+id/buttonEdit"
+            android:layout_alignRight="@+id/editTextPhone"
+            android:background="@layout/button"
+            android:text="Cancel"
+            android:textColor="@color/securityapp_white" />
+
+    </RelativeLayout>
+    
+</LinearLayout>

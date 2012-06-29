@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg" >
+        
+        <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="280dp"
+        android:layout_height="450dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/registerpageshape">
+
+                            <Button
+                                android:id="@+id/buttoncompare"
+                                android:layout_width="95dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="30dp"
+                                android:background="@layout/button"
+                                android:text="@string/confirmbutton"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="@color/securityapp_white" />
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_marginLeft="30dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="28dp"
+                                android:text="You have selected"
+                                android:textColor="@color/securityapp_black"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_marginLeft="30dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:textColor="@color/securityapp_black"
+                                android:layout_below="@+id/textView1"
+                                android:text="KK security: "
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@+id/textView2"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="41dp"
+                                android:textSize="16sp"
+                                android:text="Please pay KES 12000 to pay bill"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/securityapp_black" />
+
+                            <EditText
+                                android:id="@+id/editText1"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/buttoncompare"
+                                android:layout_alignRight="@+id/buttoncompare"
+                                android:layout_marginBottom="37dp" >
+
+                                <requestFocus />
+                            </EditText>
+                
+        </RelativeLayout>
+
+    </RelativeLayout>

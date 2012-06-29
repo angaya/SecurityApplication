@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/registration"
+    android:orientation="vertical" >
+
+<ScrollView 
+    android:fillViewport="true"
+    android:padding="10px"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="20dip" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="179dp"
+            android:hint="Card No(16 digits no space)"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/editText1"
+            android:layout_marginTop="64dp"
+            android:layout_weight="0.5"
+            android:hint="CVV No(4 digits no spaces)"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText2"
+            android:layout_centerHorizontal="true"
+            android:focusable="true"
+            android:hint="Card Expiry date" />
+
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editText7"
+            android:layout_marginTop="18dp"
+            android:background="@layout/button"
+            android:text="@string/backbutton"
+            android:textColor="@color/securityapp_white" />
+
+        <Button
+            android:id="@+id/btnpay"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/btnback"
+            android:layout_alignBottom="@+id/btnback"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:background="@layout/button"
+            android:text="@string/paybutton"
+            android:textColor="@color/securityapp_white" />
+
+    </RelativeLayout>
+    
+        </ScrollView>
+
+</LinearLayout>

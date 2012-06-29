@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="preferExternal"
+    package="com.squaddigital.securityApp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+
+    <application
+        android:icon="@drawable/launcher48"
+        android:label="@string/app_name" >
+       
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.squadigital.securityApp.activities.ProfileActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.Profile"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.ProfileContacts"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.ReportsActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.SecurityAppActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.Paypal"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.PlanDetails"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.Register"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity android:name="com.squadigital.securityApp.activities.HomeView" >
+        </activity>
+        <activity android:name="com.squadigital.securityApp.activities.Settings"
+                 android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.ResetPassword"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity android:name="com.squadigital.securityApp.activities.Pay" >
+        </activity>
+        <activity android:name="com.squadigital.securityApp.activities.Dashboard" >
+        </activity>
+        <activity android:name="com.squadigital.securityApp.activities.Account" >
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.Home"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.SplashScreen"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.MultipleAgency"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.PayMpesa"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.SecurityDetails"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.SuccessfulRegistration"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.ManageProfile"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.EmergencyContacts"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.Account"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.ChangePassword"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.EditContacts"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.UpdateContacts"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.squadigital.securityApp.activities.Help"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+
+        <receiver android:name="com.squaddigital.securityApp.locpoll.LocationPoller" />
+        <receiver android:name="com.squadigital.securityApp.activities.LocationReceiver" />
+
+        <service android:name=".services.TrackMeService" />
+        <service android:name="com.squaddigital.securityApp.locpoll.LocationPollerService" />
+    </application>
+
+</manifest>

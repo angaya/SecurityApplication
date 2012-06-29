@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="securityAgency">Security agency</string>
+    <string name="g4s">G4S</string>
+    <string name="kksecurity">KK Security</string>
+    <string name="radarsecurity">Radar Security</string>
+    <string name="applybutton">Apply</string>
+    <string name="selectbutton">Select</string>
+    <string name="comparebutton">Compare Plan</string>
+    <string name="confirmbutton">Confirm</string>
+    <string name="paybutton">Pay</string>
+    <string name="cardnumber">Card No:</string>
+    <string name="name">Name:</string>
+    <string name="bmsecurity">Bm Security</string>
+    <string name="submitbutton">Submit</string>
+    <string name="oldpassword">Old Password</string>
+    <string name="newpassword">New Password</string>
+    <string name="repassword">Repeat Password</string>
+    <string name="forgotpassword">Forgot your password?</string>
+    <string name="usernameedittext">Username</string>
+    <string name="emailedittext">Email</string>
+    <string name="passwordedittext">Password</string>
+    <string name="registerbutton">Register</string>
+    <string name="updatesbutton">Updates</string>
+    <string name="selectplan">Select plan</string>
+    <string name="applynowbutton">Apply Now</string>
+    <string name="preferences_destination_sms_edittext">Please choose the contact which will be notified when a new SIM card is detected. He will receive an SMS from your device\'s new device number.</string>
+    <string name="backbutton">Back</string>
+    <string name="about">Android security app allows you to track and raise alarm when you are faced with trouble.</string>
+    <string name="dateSliderTitle">Selected date</string>
+    <string name="cardexpire">Card Expiry:</string>
+    <string name="month">Month:</string>
+    <string name="Paymentmethods">Payment Methods:</string>
+    <string name="cvvnumber">CVV Number:</string>
+    <string name="remember_me">Remember me</string>
+    <string name="app_name">Security App</string>
+
+</resources>
